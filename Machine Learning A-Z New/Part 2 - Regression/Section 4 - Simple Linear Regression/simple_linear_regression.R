@@ -1,10 +1,11 @@
 # Simple Linear Regression
 
 # Importing the dataset
-dataset = read.csv('Salary_Data.csv')
-
+Salary_Data <- read.csv("~/Datascie_master/Machine Learning A-Z New/Part 2 - Regression/Section 4 - Simple Linear Regression/Salary_Data.csv")
+dataset<-Salary_Data
 # Splitting the dataset into the Training set and Test set
-# install.packages('caTools')
+#install.packages('caTools')
+
 library(caTools)
 set.seed(123)
 split = sample.split(dataset$Salary, SplitRatio = 2/3)
