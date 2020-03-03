@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('50_Startups.csv')
-X = dataset.iloc[:, :-1].values
-y = dataset.iloc[:, 4].values
+dataset = pd.read_csv('~/Datascie_master/Machine Learning A-Z New/Part 2 - Regression/Section 5 - Multiple Linear Regression/50_Startups.csv')
+X = dataset.iloc[:, :-1].values #selecting the features
+y = dataset.iloc[:, 4].values #selecting the target variable
 
 # Encoding categorical data
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
